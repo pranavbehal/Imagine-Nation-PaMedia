@@ -1194,46 +1194,29 @@ body {
   font-weight: 400;
 }
 
-.memory-banner {
-  background-image: linear-gradient(
-    to right top,
-    #d16ba5,
-    #c777b9,
-    #ba83ca,
-    #aa8fd8,
-    #9a9ae1,
-    #8aa7ec,
-    #79b3f4,
-    #69bff8,
-    #52cffe,
-    #41dfff,
-    #46eefa,
-    #5ffbf1
-  );
-  height: 300px;
-  margin: auto;
-  width: 500px;
+.game-flex-container {
+  display: flex;
+  align-items: center;
 }
 
-.coloring-banner {
+h1 {
+  font-size: 100px;
+  font-family: Chilanka;
+  text-align: center;
+  vertical-align: text-top;
+  color: var(--baby-blue);
+}
+
+.banner {
   background-image: linear-gradient(
     to right top,
-    #d16ba5,
-    #c777b9,
-    #ba83ca,
-    #aa8fd8,
-    #9a9ae1,
-    #8aa7ec,
-    #79b3f4,
-    #69bff8,
-    #52cffe,
-    #41dfff,
-    #46eefa,
-    #5ffbf1
+    var(--sky-blue),
+    var(--bright-orange)
   );
+  border-radius: 5px;
   height: 300px;
-  margin: auto;
-  width: 500px;
+  width: 100%;
+  margin: 2%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -2158,5 +2141,31 @@ body {
     margin-bottom: 20px;
     margin-left: 20%;
     margin-right: 15%;
+  }
+}
+
+.sitemap-img {
+  height: 50%;
+  width: 50%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .sitemap-img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .sitemap-img {
+    height: 80%;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .sitemap-img {
+    height: 65%;
+    width: 65%;
   }
 }
