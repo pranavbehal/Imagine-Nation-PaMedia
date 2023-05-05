@@ -58,11 +58,13 @@ button {
   cursor: pointer;
   font-family: Quicksand;
   font-weight: 600;
+  transition: 0.3s ease-in-out;
 }
 
 button:hover {
   background-color: rgb(255, 120, 70);
-  transition: 0.5s;
+  transition: 0.3s ease-in-out;
+  transform: scale(1.07);
 }
 
 a:link {
@@ -113,11 +115,13 @@ a:hover {
   margin: none;
   padding: 20px 1.5%;
   border-radius: 50px;
+  transition: 0.3s ease-in-out;
 }
 
 .nav-li:hover {
   background-color: #ffffff !important;
   color: var(--ocean-blue) !important;
+  transition: 0.2s ease-in-out;
 }
 
 .nav-images {
@@ -237,7 +241,7 @@ a:hover {
   border-radius: 10px;
   padding: 10px 20px;
   text-align: center;
-  font-size: 25px;
+  font-size: 22px;
   margin: 10px 10px;
   cursor: pointer;
 }
@@ -697,11 +701,12 @@ a:hover {
 
 /* About Page */
 
-.h1 {
+h1 {
   font-size: 100px;
   font-family: Chilanka;
   text-align: center;
   vertical-align: text-top;
+  color: var(--baby-blue);
 }
 
 .Charecters {
@@ -851,6 +856,11 @@ body {
     font-family: Chilanka;
     text-align: center;
     vertical-align: text-top;
+  }
+
+  #meet-the-crew-h1 {
+    padding-top: 35px;
+    color: white;
   }
 
   .Charecters {
@@ -1175,6 +1185,23 @@ body {
   font-family: Nunito;
 }
 
+.game-flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.banner {
+  background-image: linear-gradient(
+    to right top,
+    var(--sky-blue),
+    var(--bright-orange)
+  );
+  border-radius: 5px;
+  height: 300px;
+  width: 100%;
+  margin: 2%;
+}
+
 .banner-h1 {
   font-family: Quicksand;
   font-weight: 600;
@@ -1192,31 +1219,6 @@ body {
   margin: 10px;
   font-size: 20px;
   font-weight: 400;
-}
-
-.game-flex-container {
-  display: flex;
-  align-items: center;
-}
-
-h1 {
-  font-size: 100px;
-  font-family: Chilanka;
-  text-align: center;
-  vertical-align: text-top;
-  color: var(--baby-blue);
-}
-
-.banner {
-  background-image: linear-gradient(
-    to right top,
-    var(--sky-blue),
-    var(--bright-orange)
-  );
-  border-radius: 5px;
-  height: 300px;
-  width: 100%;
-  margin: 2%;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -1683,6 +1685,13 @@ h1 {
   margin-right: 20%;
 }
 
+.qa-icon {
+  height: 30px;
+  width: 30px;
+  height: 100%;
+  float: left;
+}
+
 @media only screen and (max-width: 600px) {
   .parents-container {
     width: 80%;
@@ -2143,6 +2152,87 @@ h1 {
     margin-left: 20%;
     margin-right: 15%;
   }
+}
+
+/* Contact Form */
+.contact {
+  background-color: #79b7ff;
+  border-radius: 5px;
+  margin: 5% 10%;
+  padding: 5%;
+  color: white;
+  font-family: Nunito;
+}
+
+.contact-form-field {
+  background: none;
+  line-height: 20px;
+  padding: 2%;
+  height: 40px;
+  font-size: 16px;
+  color: var(--cultured-2);
+  outline: 0;
+  background-color: var(--bright-orange);
+  border-radius: 5px;
+  border: 2px solid white;
+}
+
+.contact-form-field-header {
+  font-size: 1.2em;
+}
+
+.contact-form-field:focus {
+  border-color: var(--cultured-2);
+}
+
+#contact-message-field {
+  width: 70%;
+  height: 150px;
+}
+
+#contact-form-button {
+  border-radius: 15px;
+  margin-top: 40px;
+  margin-left: 0;
+  background: none;
+  color: var(--cream-white);
+  border-color: var(--cultured-2);
+  font-size: 23px;
+  font-family: "Nunito";
+  background-color: var(--bright-orange);
+  padding: 20px;
+}
+
+.contact-form-button:hover {
+  cursor: pointer;
+}
+
+.form-thanks {
+  text-align: center;
+  transform: translate(0%, 200%);
+}
+
+.form-thanks-h2 {
+  font-size: 50px;
+  font-family: Nunito;
+}
+
+.contact h2 {
+  font-size: 2em;
+}
+
+.contact p {
+  font-size: 2em;
+}
+
+::placeholder {
+  color: #fefefe;
+  font-family: Nunito;
+}
+
+::ms-input-placeholder {
+  color: #fefefe;
+  font-family: Nunito;
 }
 
 .sitemap-img {

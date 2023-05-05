@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-F2QP5SLMNY"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-F2QP5SLMNY");
+    </script>
+     <script>(function(d){var s = d.createElement("script");s.setAttribute("data-account", "FSY3fD98w9");s.setAttribute("src", "https://cdn.userway.org/widget.js");(d.body || d.head).appendChild(s);})(document)</script><noscript>Please ensure Javascript is enabled for purposes of <a href="https://userway.org">website accessibility</a></noscript>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe - Imagine Nation</title>
+    <link rel="icon" type="image/x-icon" href="/Images/Logo 2.PNG" />
+    <link rel="stylesheet" href="tictoe.css" />
+    <link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="https://use.typekit.net/xbo6rbk.css" />
+    <script src="index.js"></script>
+    <script src="tictoe.js"></script>
+  </head>
+    <nav>
+      <div class="dropdown" id="mobile-nav">
+      <button class="menu-btn">
+        <img id="menu-img" src="images/menu-lines.jpg" />
+      </button>
+      <div class="menu-content">
+        <a class="nav-pages-white" href="index.html">HOME</a>
+        <a class="nav-pages-white" href="about.html">ABOUT</a>
+        <a class="nav-pages-white" href="parents.html">FOR PARENTS</a>
+        <a class="nav-pages-white" href="games.html">GAMES </a>
+        <a class="nav-pages-white" href="credits.html">CREDITS</a>
+      </div>
+    </div>
+  <div class="web-nav">
+    <a href="index.html" class="nav-link home-nav-link"
+    ><li class="nav-li">HOME</li></a>
+    
+  <a href="about.html" class="nav-link"
+    ><li class="nav-li">
+      <img
+        class="nav-images"
+        src="images/about_logo.png"
+        height="40vw"
+        width="40vw"
+      />About
+    </li></a
+  >
+  <a href="parents.html" class="nav-link"
+    ><li class="nav-li">
+      <img
+        class="nav-images"
+        src="images/parents_logo.png"
+        height="40vw"
+        width="40vw"
+      />For Parents
+    </li></a
+  >
+  <a href="games.html" class="nav-link"
+    ><li class="nav-li">
+      <img
+        class="nav-images"
+        src="images/game_logo.png"
+        height="40vw"
+        width="40vw"
+      />Games
+    </li></a
+  >
+  <a href="credits.html" class="nav-link"
+    ><li class="nav-li">
+      <img
+        class="nav-images"
+        src="images/credits_logo.png"
+        height="40vw"
+        width="40vw"
+      />Credits
+    </li></a
+  >
+  </div>
+</nav>
+    </nav>   
+<body>
+    <div id="main">
+        <h1>TIC TAC TOE</h1>
+   
+        <h2 id="ins">Tap on a box to start the game!<br><br>First Player starts as 
+            <b>Player X</b><br>Second 
+            Player is <b>Player 0</b>
+        </h2>
+ 
+  
+   
+   
+        <br><br>
+        <input type="text" id="b1" onclick=
+            "box1(); myfunc();" readonly>
+   
+        <input type="text" id="b2" onclick=
+            "box2(); myfunc();" readonly>
+   
+        <input type="text" id="b3" onclick=
+            "box3(); myfunc();" readonly>
+        <br><br>
+   
+        <input type="text" id="b4" onclick=
+            "box4(); myfunc();" readonly>
+               
+        <input type="text" id="b5" onclick=
+            "box5(); myfunc();" readonly>
+   
+        <input type="text" id="b6" onclick=
+            "box6(); myfunc();" readonly>
+        <br><br>
+   
+        <input type="text" id="b7" onclick=
+            "box7(); myfunc();" readonly>
+   
+        <input type="text" id="b8" onclick=
+            "box8();myfunc();" readonly>
+   
+        <input type="text" id="b9" onclick=
+            "box9();myfunc();" readonly>
+   
+        <br><br><br>
+        <button id="button" onclick="resetGame()">
+            RESET
+        </button>
+   
+        <br><br>
+        <p id="game-winner-text"></p>
+    </div>
+</body>
+</html>
